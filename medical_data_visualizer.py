@@ -44,7 +44,6 @@ def draw_heat_map():
 
     sns.heatmap(corr, vmin = 0, vmax = 0.25, fmt = '.1f', linewidths= 1 , annot= True, square = True, mask =mask , cbar_kws={'shrink': .82})
 
-    # 16
     fig.savefig("heatmap.png")
     plt.close()
     return fig
